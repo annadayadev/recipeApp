@@ -1,33 +1,51 @@
+* {
+  /*color: #484848; */
+  font-weight: 300;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-weight: 200;
+  margin-top: 2%;
+  font-size: 2.4em;
+}
+
+.desc {
+  color: white;
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.2em;
+}
+
+.search-form {
+  min-height: 10vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.search-bar {
+  width: 50%;
+  border: none;
+  padding: 10px;
+}
+
+.search-button {
+  background: lightcoral;
+  border: none;
+  padding: 10px 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.recipes {
+  display: flex;
+  justify-content: space-around;
+  /* this means the content moves if we make it smaller, its gonna wrap */
+  flex-wrap: wrap;
 }
